@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CoinCard from "./CoinCard";
-import { API } from "../utils/const";
+import { API } from "../../utils/const";
 const CoinList = () => {
     const [coinsList, setCoinsList] = useState([]);
     const fetchCoins = async () => {
@@ -16,7 +16,7 @@ const CoinList = () => {
     console.log(coinsList);
 
     return (
-        <div className="flex flex-wrap justify-evenly bg-gray-900 w-full">
+        <div className="flex flex-wrap justify-evenly pt-20">
             {coinsList.map((obj, i) => {
                 return <CoinCard details={obj} />;
             })}

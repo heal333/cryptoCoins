@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+
 const CoinCard = ({ details }) => {
     return (
-        <div
+        <Link
+            to={`/${details.id}`}
             key={details.id}
             className="bg-black text-white m-3 p-5 rounded-lg text-2xl lg:text-base transition-all duration-500"
         >
@@ -44,7 +47,7 @@ const CoinCard = ({ details }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

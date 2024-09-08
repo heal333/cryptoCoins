@@ -1,24 +1,30 @@
 import { useEffect, useState } from "react";
 import CoinCard from "./CoinCard";
 import { API } from "../../utils/const";
+import LoadingDiv from "../../utils/LoadingDiv";
+
 const CoinList = () => {
     const [coinsList, setCoinsList] = useState([]);
     const fetchCoins = async () => {
-        const response = await fetch(`${API}`);
+        const response = await fetch(`${API}/coins`);
         const result = await response.json();
         setCoinsList(result.data);
-        console.log(coinsList);
     };
 
     useEffect(() => {
         fetchCoins();
+        window.scrollTo(0, 0);
     }, []);
-    console.log(coinsList);
+
+    if (coinsList.length == 0) {
+        return <LoadingDiv />;
+    }
+    // return <LoadingDiv />;
 
     return (
-        <div className="flex flex-wrap justify-evenly pt-20">
+        <div className="flex flex-wrap justify-evenly bg-gradient-to-b from-gray-900 to-gray-500">
             {coinsList.map((obj, i) => {
-                return <CoinCard details={obj} />;
+                return <CoinCard details={obj} key={obj.id} />;
             })}
         </div>
     );

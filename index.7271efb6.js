@@ -3046,7 +3046,24 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     columnNumber: 56
                 }, undefined)
             }
-        ]
+        ],
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                "got to ",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: (0, _const.HOME_ADDRESS),
+                    children: "homepage"
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 42,
+                    columnNumber: 24
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/App.js",
+            lineNumber: 41,
+            columnNumber: 13
+        }, undefined)
     }
 ]);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
@@ -3054,7 +3071,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 44,
+    lineNumber: 49,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -27395,13 +27412,13 @@ const CoinCard = ({ details })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
         onClick: ()=>setCoinData(details?.quote?.USD),
         to: `${(0, _const.HOME_ADDRESS)}/${details.id}`,
-        className: "bg-black text-white m-5 p-7 rounded-xl text-5xl 2xl:text-base transition-all duration-500",
+        className: "bg-black text-white m-5 p-7 rounded-xl text-3xl 2xl:text-base transition-all duration-500",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex justify-between min-w-96 2xl:min-w-60",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex items-center justify-center rounded-full w-44 h-44 2xl:w-16 2xl:h-16 border-2 border-gray-400",
+                        className: "flex items-center justify-center rounded-full w-20 h-20 2xl:w-16 2xl:h-16 border-2 border-gray-400",
                         children: details.symbol
                     }, void 0, false, {
                         fileName: "src/components/body/CoinCard.js",
@@ -27423,7 +27440,7 @@ const CoinCard = ({ details })=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex justify-between text-gray-300 text-lg",
+                className: "flex justify-between text-gray-300 text-2xl 2xl:text-base",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "price per unit: "
@@ -27434,7 +27451,7 @@ const CoinCard = ({ details })=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
-                            details.quote?.USD?.price.toFixed(7),
+                            details.quote?.USD?.price.toFixed(3),
                             " USD"
                         ]
                     }, void 0, true, {
@@ -27525,7 +27542,7 @@ $RefreshReg$(_c, "CoinCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/ContextProvider":"3y1Ap","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../utils/const":"a1SWD"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/ContextProvider":"3y1Ap","../../utils/const":"a1SWD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.26.1
  *
@@ -35585,6 +35602,6 @@ $RefreshReg$(_c, "CryptoConverter");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../../utils/const":"a1SWD"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire3830")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/const":"a1SWD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire3830")
 
 //# sourceMappingURL=index.7271efb6.js.map

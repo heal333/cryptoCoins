@@ -27412,7 +27412,7 @@ const CoinCard = ({ details })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
         onClick: ()=>setCoinData(details?.quote?.USD),
         to: `${(0, _const.HOME_ADDRESS)}/${details.id}`,
-        className: "bg-black text-white m-5 p-7 rounded-xl text-3xl 2xl:text-base transition-all duration-500",
+        className: "bg-black text-white m-5 p-7 rounded-xl text-1xl 2xl:text-base transition-all duration-500",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex justify-between min-w-96 2xl:min-w-60",
@@ -27440,7 +27440,7 @@ const CoinCard = ({ details })=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex justify-between text-gray-300 text-2xl 2xl:text-base",
+                className: "flex justify-between text-gray-300 text-xl 2xl:text-base",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "price per unit: "

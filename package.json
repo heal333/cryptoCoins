@@ -2,7 +2,7 @@
     "name": "crypto-coins",
     "private": true,
     "version": "1.0.0",
-    "source": "index.html",
+    "source": "./src/index.html",
     "scripts": {
         "start": "parcel ./src/index.html",
         "predeploy": "npm run build",

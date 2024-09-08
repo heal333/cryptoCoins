@@ -37,6 +37,11 @@ const appRouter = createBrowserRouter([
             },
             { path: `${HOME_ADDRESS}/:resId`, element: <CoinDetailsPage /> },
         ],
+        errorElement: (
+            <div>
+                got to <a href={HOME_ADDRESS}>homepage</a>
+            </div>
+        ),
     },
 ]);
 

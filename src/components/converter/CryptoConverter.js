@@ -42,10 +42,6 @@ const CryptoConverter = () => {
         setResult(result?.data?.quote[toInput.id]?.price);
     };
 
-    const convertClickHandler = () => {
-        console.log(fromInput.id, toInput.id, amount);
-        fetchConvert();
-    };
     const switchHandler = () => {
         const temp = fromInput;
         setFromInput(toInput);
@@ -58,15 +54,14 @@ const CryptoConverter = () => {
     useEffect(() => {
         fetchConvert();
     }, [fromInput, toInput, amount]);
-    const temp = "m-3";
-    const inputStyle =
-        "pl-2 py-2 ml-2 text-black rounded-xl bg-black text-white";
+    const temp = "flex justify-between m-5";
+    const inputStyle = "pl-5 py-2 ml-2 rounded-xl bg-black text-white";
     return (
-        <div className="h-full bg-gradient-to-b from-gray-900 to-gray-500 text-white">
+        <div className="h-full bg-gradient-to-b from-gray-900 to-gray-500 text-white text-xl">
             <div className="text-center text-2xl mb-10">
                 Convert between different currencies
             </div>
-            <div className="flex flex-wrap justify-evenly">
+            <div className="mx-auto w-fit flex flex-col justify-center 2xl:flex-row">
                 <div className={temp}>
                     From:
                     <select
@@ -85,7 +80,12 @@ const CryptoConverter = () => {
                         })}
                     </select>
                 </div>
-                <button onClick={switchHandler}>switch</button>
+                <button
+                    onClick={switchHandler}
+                    className="block w-fit h-fit m-auto px-3 py-0 border rounded-lg hover:bg-slate-300 hover:text-gray-800"
+                >
+                    switch
+                </button>
                 <div className={temp}>
                     To:
                     <select

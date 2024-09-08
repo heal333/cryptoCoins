@@ -66,7 +66,7 @@ const CoinDetailsPage = () => {
                 })}
             </div>
 
-            <div className="p-20 text-white">{data.description}</div>
+            <div className="p-20 text-gray-300">{data.description}</div>
         </div>
     );
 };

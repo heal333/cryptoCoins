@@ -17,3 +17,5 @@ download all the dependencies with npm, run
 once all dependencies are installed start the developer server on you localhost by running
 
     npm run start
+
+go to "/cryptoCoins" path of the local host to land in the homepage

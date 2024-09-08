@@ -283,6 +283,11 @@ img, video {
   margin-bottom: auto;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -339,8 +344,32 @@ img, video {
   width: 100%;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-11\/12 {
+  width: 91.6667%;
+}
+
+.w-10\/12 {
+  width: 83.3333%;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
 .min-w-96 {
   min-width: 24rem;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -462,6 +491,10 @@ img, video {
 
 .pr-1 {
   padding-right: .25rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .text-center {

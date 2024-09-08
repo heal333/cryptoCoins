@@ -35110,7 +35110,7 @@ const CoinDetailsPage = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "p-20 text-white",
+                className: "p-20 text-gray-300",
                 children: data.description
             }, void 0, false, {
                 fileName: "src/components/coinPage/CoinDetailsPage.js",
@@ -35157,7 +35157,7 @@ const PriceChange = ({ change, timeFrame })=>{
         className: "flex justify-evenly text-xl",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex justify-end w-72 text-gray-400",
+                className: "flex justify-end w-44 text-gray-400",
                 children: timeFrame
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
@@ -35189,52 +35189,60 @@ const PriceChangeHistory = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "mx-auto my-10 w-3/4",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceChange, {
-                change: coinData?.percent_change_1h,
-                timeFrame: "Price change in last 1 hour:"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "text-white text-xl",
+                children: "Price change history"
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
                 lineNumber: 26,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceChange, {
-                change: coinData?.percent_change_24h,
-                timeFrame: "Price change in last 24 hours:"
+                change: coinData?.percent_change_1h,
+                timeFrame: "in last 1 hour:"
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
-                lineNumber: 30,
+                lineNumber: 27,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceChange, {
+                change: coinData?.percent_change_24h,
+                timeFrame: "in last 24 hours:"
+            }, void 0, false, {
+                fileName: "src/components/coinPage/PriceChangeHistory.js",
+                lineNumber: 31,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceChange, {
                 change: coinData?.percent_change_7d,
-                timeFrame: "Price change in last 7 days:"
+                timeFrame: "in last 7 days:"
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceChange, {
                 change: coinData?.percent_change_30d,
-                timeFrame: "Price change in last 30 days:"
+                timeFrame: "in last 30 days:"
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceChange, {
                 change: coinData?.percent_change_60d,
-                timeFrame: "Price change in last 60 days:"
+                timeFrame: "in last 60 days:"
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
-                lineNumber: 42,
+                lineNumber: 43,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PriceChange, {
                 change: coinData?.percent_change_90d,
-                timeFrame: "Price change in last 90 days:"
+                timeFrame: "in last 90 days:"
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
-                lineNumber: 46,
+                lineNumber: 47,
                 columnNumber: 13
             }, undefined)
         ]
@@ -35439,10 +35447,6 @@ const CryptoConverter = ()=>{
         // console.log(result);
         setResult(result?.data?.quote[toInput.id]?.price);
     };
-    const convertClickHandler = ()=>{
-        console.log(fromInput.id, toInput.id, amount);
-        fetchConvert();
-    };
     const switchHandler = ()=>{
         const temp = fromInput;
         setFromInput(toInput);
@@ -35458,21 +35462,21 @@ const CryptoConverter = ()=>{
         toInput,
         amount
     ]);
-    const temp = "m-3";
-    const inputStyle = "pl-2 py-2 ml-2 text-black rounded-xl bg-black text-white";
+    const temp = "flex justify-between m-3";
+    const inputStyle = "pl-5 py-2 ml-2 rounded-xl bg-black text-white";
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "h-full bg-gradient-to-b from-gray-900 to-gray-500 text-white",
+        className: "h-full bg-gradient-to-b from-gray-900 to-gray-500 text-white text-xl",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "text-center text-2xl mb-10",
                 children: "Convert between different currencies"
             }, void 0, false, {
                 fileName: "src/components/converter/CryptoConverter.js",
-                lineNumber: 66,
+                lineNumber: 61,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap justify-evenly",
+                className: "mx-auto w-fit flex flex-col justify-center",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: temp,
@@ -35489,19 +35493,19 @@ const CryptoConverter = ()=>{
                                         children: obj.name
                                     }, obj.id, false, {
                                         fileName: "src/components/converter/CryptoConverter.js",
-                                        lineNumber: 81,
+                                        lineNumber: 76,
                                         columnNumber: 33
                                     }, undefined);
                                 })
                             }, void 0, false, {
                                 fileName: "src/components/converter/CryptoConverter.js",
-                                lineNumber: 72,
+                                lineNumber: 67,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/converter/CryptoConverter.js",
-                        lineNumber: 70,
+                        lineNumber: 65,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35509,7 +35513,7 @@ const CryptoConverter = ()=>{
                         children: "switch"
                     }, void 0, false, {
                         fileName: "src/components/converter/CryptoConverter.js",
-                        lineNumber: 88,
+                        lineNumber: 83,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35527,19 +35531,19 @@ const CryptoConverter = ()=>{
                                         children: obj.name
                                     }, obj.id, false, {
                                         fileName: "src/components/converter/CryptoConverter.js",
-                                        lineNumber: 99,
+                                        lineNumber: 94,
                                         columnNumber: 36
                                     }, undefined);
                                 })
                             }, void 0, false, {
                                 fileName: "src/components/converter/CryptoConverter.js",
-                                lineNumber: 91,
+                                lineNumber: 86,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/converter/CryptoConverter.js",
-                        lineNumber: 89,
+                        lineNumber: 84,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35553,19 +35557,19 @@ const CryptoConverter = ()=>{
                                 value: amount
                             }, void 0, false, {
                                 fileName: "src/components/converter/CryptoConverter.js",
-                                lineNumber: 105,
+                                lineNumber: 100,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/converter/CryptoConverter.js",
-                        lineNumber: 103,
+                        lineNumber: 98,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/converter/CryptoConverter.js",
-                lineNumber: 69,
+                lineNumber: 64,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35581,13 +35585,13 @@ const CryptoConverter = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/converter/CryptoConverter.js",
-                lineNumber: 119,
+                lineNumber: 114,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/converter/CryptoConverter.js",
-        lineNumber: 65,
+        lineNumber: 60,
         columnNumber: 9
     }, undefined);
 };

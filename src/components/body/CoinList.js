@@ -6,14 +6,17 @@ import LoadingDiv from "../../utils/LoadingDiv";
 const CoinList = () => {
     const [coinsList, setCoinsList] = useState([]);
     const fetchCoins = async () => {
-        const response = await fetch(`${API}/coins`);
-        const result = await response.json();
-        setCoinsList(result.data);
+        try {
+            const response = await fetch(`${API}/coins`);
+            const result = await response.json();
+            setCoinsList(result.data);
+        } catch (err) {
+            console.log(err);
+        }
     };
 
     useEffect(() => {
         fetchCoins();
-        window.scrollTo(0, 0);
     }, []);
 
     if (coinsList.length == 0) {

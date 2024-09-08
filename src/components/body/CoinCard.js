@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { PriceHistoryChangeContext } from "../../utils/ContextProvider";
 
 const CoinCard = ({ details }) => {
+    const { setCoinData } = useContext(PriceHistoryChangeContext);
+
     return (
         <Link
+            onClick={() => setCoinData(details?.quote?.USD)}
             to={`/${details.id}`}
-            key={details.id}
             className="bg-black text-white m-3 p-5 rounded-lg text-2xl lg:text-base transition-all duration-500"
         >
             <div className="flex justify-between min-w-96 lg:min-w-60">
@@ -38,12 +42,12 @@ const CoinCard = ({ details }) => {
                     7 days:
                     <div
                         className={`${
-                            details.quote?.USD?.percent_change_24h > 0
+                            details.quote?.USD?.percent_change_7d > 0
                                 ? "text-green-500"
                                 : "text-red-500"
                         }`}
                     >
-                        {details.quote?.USD?.percent_change_24h.toFixed(2)}%
+                        {details.quote?.USD?.percent_change_7d.toFixed(2)}%
                     </div>
                 </div>
             </div>

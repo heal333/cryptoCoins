@@ -7,15 +7,17 @@ import CoinDetailsPage from "./components/coinPage/CoinDetailsPage";
 import { HOME_ADDRESS } from "./utils/const";
 import HeaderOffset from "./utils/HeaderOffset";
 import Footer from "./components/footer/Footer";
+import ContextProvider from "./utils/ContextProvider";
+import CryptoConverter from "./components/converter/CryptoConverter";
 
 const App = () => {
     return (
-        <div className="">
+        <ContextProvider>
             <Header />
             <HeaderOffset />
             <Outlet />
             <Footer />
-        </div>
+        </ContextProvider>
     );
 };
 
@@ -28,6 +30,10 @@ const appRouter = createBrowserRouter([
             {
                 path: `${HOME_ADDRESS}/test`,
                 element: <div>test page</div>,
+            },
+            {
+                path: `${HOME_ADDRESS}/cryptoConverter`,
+                element: <CryptoConverter />,
             },
             { path: `${HOME_ADDRESS}/:resId`, element: <CoinDetailsPage /> },
         ],

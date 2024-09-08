@@ -35187,7 +35187,7 @@ const PriceChangeHistory = ()=>{
     _s();
     const { coinData } = (0, _react.useContext)((0, _contextProvider.PriceHistoryChangeContext));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "mx-auto my-10 w-3/4",
+        className: "mx-auto my-10 w-5/6",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "text-white text-xl",

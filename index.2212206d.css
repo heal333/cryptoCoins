@@ -364,6 +364,14 @@ img, video {
   width: fit-content;
 }
 
+.w-1\/12 {
+  width: 8.33333%;
+}
+
+.w-5\/6 {
+  width: 83.3333%;
+}
+
 .min-w-96 {
   min-width: 24rem;
 }

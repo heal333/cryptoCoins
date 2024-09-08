@@ -35157,7 +35157,7 @@ const PriceChange = ({ change, timeFrame })=>{
         className: "flex justify-evenly text-xl",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex justify-end w-44 text-gray-400",
+                className: "flex justify-end w-40 text-gray-400",
                 children: timeFrame
             }, void 0, false, {
                 fileName: "src/components/coinPage/PriceChangeHistory.js",
@@ -35165,7 +35165,7 @@ const PriceChange = ({ change, timeFrame })=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: `${change > 0 ? "text-green-500" : "text-red-600"} w-44`,
+                className: `${change > 0 ? "text-green-500" : "text-red-600"} w-40`,
                 children: [
                     change,
                     " %"
@@ -35462,7 +35462,7 @@ const CryptoConverter = ()=>{
         toInput,
         amount
     ]);
-    const temp = "flex justify-between m-3";
+    const temp = "flex justify-between m-5";
     const inputStyle = "pl-5 py-2 ml-2 rounded-xl bg-black text-white";
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "h-full bg-gradient-to-b from-gray-900 to-gray-500 text-white text-xl",
@@ -35476,7 +35476,7 @@ const CryptoConverter = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mx-auto w-fit flex flex-col justify-center",
+                className: "mx-auto w-fit flex flex-col justify-center 2xl:flex-row",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: temp,
@@ -35510,6 +35510,7 @@ const CryptoConverter = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: switchHandler,
+                        className: "block w-fit h-fit m-auto px-3 py-0 border rounded-lg hover:bg-slate-300 hover:text-gray-800",
                         children: "switch"
                     }, void 0, false, {
                         fileName: "src/components/converter/CryptoConverter.js",
@@ -35531,19 +35532,19 @@ const CryptoConverter = ()=>{
                                         children: obj.name
                                     }, obj.id, false, {
                                         fileName: "src/components/converter/CryptoConverter.js",
-                                        lineNumber: 94,
+                                        lineNumber: 99,
                                         columnNumber: 36
                                     }, undefined);
                                 })
                             }, void 0, false, {
                                 fileName: "src/components/converter/CryptoConverter.js",
-                                lineNumber: 86,
+                                lineNumber: 91,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/converter/CryptoConverter.js",
-                        lineNumber: 84,
+                        lineNumber: 89,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35557,13 +35558,13 @@ const CryptoConverter = ()=>{
                                 value: amount
                             }, void 0, false, {
                                 fileName: "src/components/converter/CryptoConverter.js",
-                                lineNumber: 100,
+                                lineNumber: 105,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/converter/CryptoConverter.js",
-                        lineNumber: 98,
+                        lineNumber: 103,
                         columnNumber: 17
                     }, undefined)
                 ]
@@ -35585,7 +35586,7 @@ const CryptoConverter = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/converter/CryptoConverter.js",
-                lineNumber: 114,
+                lineNumber: 119,
                 columnNumber: 13
             }, undefined)
         ]

@@ -27387,38 +27387,39 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 var _contextProvider = require("../../utils/ContextProvider");
+var _const = require("../../utils/const");
 var _s = $RefreshSig$();
 const CoinCard = ({ details })=>{
     _s();
     const { setCoinData } = (0, _react.useContext)((0, _contextProvider.PriceHistoryChangeContext));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
         onClick: ()=>setCoinData(details?.quote?.USD),
-        to: `/${details.id}`,
-        className: "bg-black text-white m-3 p-5 rounded-lg text-2xl lg:text-base transition-all duration-500",
+        to: `${(0, _const.HOME_ADDRESS)}/${details.id}`,
+        className: "bg-black text-white m-5 p-7 rounded-xl text-5xl 2xl:text-base transition-all duration-500",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex justify-between min-w-96 lg:min-w-60",
+                className: "flex justify-between min-w-96 2xl:min-w-60",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex items-center justify-center rounded-full w-24 h-24 lg:w-16 lg:h-16 border-2 border-gray-400",
+                        className: "flex items-center justify-center rounded-full w-44 h-44 2xl:w-16 2xl:h-16 border-2 border-gray-400",
                         children: details.symbol
                     }, void 0, false, {
                         fileName: "src/components/body/CoinCard.js",
-                        lineNumber: 15,
+                        lineNumber: 16,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex items-center ml-10 text-gray-400",
+                        className: "flex items-center ml-44 text-gray-400",
                         children: details.name
                     }, void 0, false, {
                         fileName: "src/components/body/CoinCard.js",
-                        lineNumber: 18,
+                        lineNumber: 19,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body/CoinCard.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27428,7 +27429,7 @@ const CoinCard = ({ details })=>{
                         children: "price per unit: "
                     }, void 0, false, {
                         fileName: "src/components/body/CoinCard.js",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27438,13 +27439,13 @@ const CoinCard = ({ details })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/body/CoinCard.js",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body/CoinCard.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27455,7 +27456,7 @@ const CoinCard = ({ details })=>{
                         children: "In last:"
                     }, void 0, false, {
                         fileName: "src/components/body/CoinCard.js",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27470,13 +27471,13 @@ const CoinCard = ({ details })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/body/CoinCard.js",
-                                lineNumber: 31,
+                                lineNumber: 32,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/body/CoinCard.js",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27491,25 +27492,25 @@ const CoinCard = ({ details })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/body/CoinCard.js",
-                                lineNumber: 43,
+                                lineNumber: 44,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/body/CoinCard.js",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body/CoinCard.js",
-                lineNumber: 27,
+                lineNumber: 28,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/body/CoinCard.js",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 9
     }, undefined);
 };
@@ -27524,7 +27525,7 @@ $RefreshReg$(_c, "CoinCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/ContextProvider":"3y1Ap","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/ContextProvider":"3y1Ap","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../utils/const":"a1SWD"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.26.1
  *
@@ -34864,7 +34865,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API", ()=>API);
 parcelHelpers.export(exports, "HOME_ADDRESS", ()=>HOME_ADDRESS);
 const API = "https://server-k0iw.onrender.com";
-const HOME_ADDRESS = "";
+const HOME_ADDRESS = "/cryptoCoins";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9F1NK":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0afa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");

@@ -34881,7 +34881,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API", ()=>API);
 parcelHelpers.export(exports, "HOME_ADDRESS", ()=>HOME_ADDRESS);
-const API = "https://server-k0iw.onrender.com";
+const API = "https://server-k0iw.onrender.com/cryptoCoins/API";
 const HOME_ADDRESS = "/cryptoCoins";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9F1NK":[function(require,module,exports) {
